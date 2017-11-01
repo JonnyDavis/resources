@@ -20,3 +20,6 @@ blockquote:after {
 
 .news-item h1 {
   margin-bottom: 20px; }
+
+aside {
+  background: black; }
