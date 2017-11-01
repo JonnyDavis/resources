@@ -4,6 +4,8 @@ let rename = require('gulp-rename');
 let sass = require('gulp-sass');
 let watch = require('gulp-watch');
 let gulpSequence = require('gulp-sequence');
+let concat = require('gulp-concat');
+let jsmin = require('gulp-jsmin');
 
 gulp.task('sass', function () {
     var stream = gulp.src('./scss/styles.scss')
@@ -28,4 +30,18 @@ gulp.task('styles', function(callback){
 
 gulp.task('watch', function () {
 	gulp.watch('./scss/*.scss', ['styles']);
+});
+
+
+// Compile and minify js
+
+gulp.task('default', ['compile_js']);
+
+gulp.task('compile_js', function(){
+	gulp.watch("./scripts/*.js", function(){
+		gulp.src('./scripts/*.js')
+			.pipe(jsmin())
+			.pipe(concat('scripts.js'))
+			.pipe(gulp.dest('js'));
+	});
 });
