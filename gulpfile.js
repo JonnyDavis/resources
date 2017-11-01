@@ -45,3 +45,11 @@ gulp.task('compile_js', function(){
 			.pipe(gulp.dest('js'));
 	});
 });
+
+let tabify = require('gulp-tabify');
+ 
+gulp.task('default', function () {
+  return gulp.src('./app/**.*.js')
+    .pipe(tabify(4, true))
+    .pipe(gulp.dest('./app'));
+});
