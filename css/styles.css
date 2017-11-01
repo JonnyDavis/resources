@@ -1,4 +1,3 @@
-
 blockquote {
   color: gray;
   font-style: italic;
@@ -25,3 +24,5 @@ blockquote:after {
 .art2-vid {
   padding-top: 2%; }
 
+.sidebar {
+  background-color: black; }
