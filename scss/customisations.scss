@@ -38,6 +38,8 @@ blockquote:after {
 
 .sidebar {
 	background-color: black;
+}
+
 
 .news-item h1 {
 	margin-bottom: 20px;
@@ -45,5 +47,14 @@ blockquote:after {
 
 aside {
 	background: black;
+	color: white;
+	text-align: center;
+}
 
+aside a {
+	color: white;
+}
+
+aside img {
+	width: 95%;
 }
