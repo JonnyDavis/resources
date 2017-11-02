@@ -1,47 +1,3 @@
-aside {
-  background: black; }
-
-.news-item {
-  position: relative;
-  margin: 1% 0;
-  padding: 5% 3%; }
-  .news-item h1 {
-    margin-bottom: 20px; }
-  .news-item h1, .news-item h2 {
-    font-family: "Alegreya";
-    font-weight: bold;
-    letter-spacing: .1em;
-    text-decoration: underline; }
-  .news-item p {
-    color: #666666;
-    font-family: Helvetica; }
-  .news-item p:nth-of-type(1):first-letter {
-    color: #B03D50;
-    font-family: "Alegreya";
-    font-size: 24px;
-    font-weight: bold; }
-  .news-item blockquote {
-    color: #B03D50;
-    font-style: italic;
-    quotes: '"' '"' "'" "'"; }
-  .news-item blockquote::before,
-  .news-item blockquote::after {
-    font-weight: bold; }
-  .news-item blockquote::before {
-    content: open-quote;
-    padding-right: 15px; }
-  .news-item blockquote::after {
-    content: close-quote;
-    padding-left: 15px; }
-  .news-item::after {
-    background: #B03D50;
-    content: '';
-    height: 1px;
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    right: 10%; }
-
 /*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -608,17 +564,6 @@ pre {
   padding-right: 15px;
   padding-left: 15px; }
 
-<<<<<<< HEAD
-.side-img-col img {
-  margin-top: 55px; }
-
-.art2-heading {
-  padding: 2% 0 2% 0; }
-
-.art2-vid {
-  padding-top: 2%; }
-
-=======
 .col {
   flex-basis: 0;
   flex-grow: 1;
@@ -629,30 +574,6 @@ pre {
   width: auto;
   max-width: none; }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> development
-.sidebar {
-  background-color: black; }
-
-.news-item h1 {
-  margin-bottom: 20px; }
-
-aside {
-<<<<<<< HEAD
-  background: black;
-  color: white;
-  text-align: center; }
-
-aside a {
-  color: white; }
-
-aside img {
-  width: 95%; }
-=======
-  background: black; }
->>>>>>> e38c9565659d0fc6b86aa7313637db0539327099
-=======
 .col-1 {
   flex: 0 0 8.33333%;
   max-width: 8.33333%; }
@@ -5943,5 +5864,47 @@ a.text-dark:focus, a.text-dark:hover {
 
 .invisible {
   visibility: hidden !important; }
->>>>>>> 85f90ee9c16c439979aa834f2621c203b91ada8c
->>>>>>> development
+
+blockquote {
+  color: gray;
+  font-style: italic;
+  quotes: '"' '"' "'" "'"; }
+
+blockquote::before,
+blockquote:after {
+  font-weight: bold; }
+
+blockquote::before {
+  content: open-quote;
+  padding-right: 15px; }
+
+blockquote:after {
+  content: close-quote;
+  padding-left: 15px; }
+
+.side-img-col img {
+  margin-top: 55px; }
+
+.art2-heading {
+  padding: 2% 0 2% 0; }
+
+.art2-vid {
+  padding-top: 2%; }
+
+.sidebar {
+  background-color: black; }
+
+.news-item h1 {
+  margin-bottom: 20px; }
+
+aside {
+  background: black;
+  color: white;
+  text-align: center;
+  padding-top: 2%; }
+
+aside a {
+  color: white; }
+
+aside img {
+  width: 95%; }
