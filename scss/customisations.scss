@@ -1,1 +1,215 @@
-customisations.scss
+
+// Variables
+
+$headerFont: 'Alegreya';
+>>>>>>> 8f461be7ad713fabd8116b5a7783276b71cd2aea
+
+blockquote {
+	color: gray;
+	font-style: italic;
+  quotes: '"' '"' "'" "'";
+}
+
+blockquote::before,
+blockquote:after {
+  font-weight: bold;
+}
+
+blockquote::before {
+	content: open-quote;	
+	padding-right: 15px;
+}
+
+blockquote:after {
+  content: close-quote;
+	padding-left: 15px;
+}
+
+
+.art2-heading {
+	padding: 2% 0 2% 0;
+}
+
+.art2-vid {
+	padding-top: 2%;
+}
+
+.sidebar {
+	background-color: black;
+}
+
+
+.news-item h1 {
+	margin-bottom: 20px;
+}
+
+.carouselcontainer {
+height:550px;
+}
+
+aside {
+      background: #d9d9d9;
+      text-align: center;
+}
+
+aside h2 {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      font-family: $headerFont;
+      font-weight: bold;
+      text-decoration: underline;
+
+}
+
+.article-aside {
+      padding-bottom: 1%;
+      margin-bottom: 5%;
+      position: relative;
+}
+.article-aside::after {
+      background: #B03D50;
+      content: '';
+      height: 1px;
+      position: absolute;
+      bottom: 0;  
+      left: 10%;
+      right: 10%; 
+}
+
+
+aside a {
+      color: black;
+}
+
+aside img {
+      width: 95%;
+      border: 1px solid #B03D50;
+}
+
+.container-fluid { 
+	margin: 0;
+	padding: 0;
+}
+
+// Header
+
+.main-header {
+	padding: 1% 5% 0;
+	border-bottom: 3px solid black;	
+
+	background: linear-gradient(#B03D50, #6E2632 150%);
+
+	h1 {
+		color: white;
+		font-family: $headerFont;
+		font-weight: bold;
+		letter-spacing: .1em;
+	}
+
+	.lead {
+		color: black;
+		font-family: $headerFont;
+		font-size: 14px;
+		letter-spacing: .2em;
+		text-transform: uppercase;
+	}
+
+	nav {
+		a {
+			display: inline-block;
+			
+			margin-right: 2%;
+
+			color: white;
+			font-family: $headerFont;
+			letter-spacing: .1em;
+		}
+		a.active {
+			text-decoration: underline;
+		}
+		padding-bottom: 1%;
+	}
+
+	form {
+		padding-bottom: 1%;
+		position: absolute;
+		right: 3%;
+		top: 3%;
+
+		overflow: auto;
+		input[type="search"] {
+			border: none;
+			border-radius: 50%;
+			padding: .25em;
+			display: block;
+			width: 35px;
+
+			background-image: url('../images/mag.png');
+			background-size: 15px 15px;
+			background-repeat: no-repeat;
+			background-position: 10px;
+		}
+	}
+}
+
+// Articles
+
+.news-item {
+	position: relative;
+
+	margin: 1% 0;
+	padding: 5% 3%;
+	h2 {
+		margin-bottom: 20px;
+	}
+	h2, h3 {
+		font-family: $headerFont;
+		font-weight: bold;
+		letter-spacing: .1em;
+		text-decoration: underline;	
+	}
+
+	p {
+		color: #666666;
+		font-family: Helvetica;
+	}
+
+	p:nth-of-type(1):first-letter {
+		color: #B03D50;	
+
+		font-family: $headerFont;
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	blockquote {
+		color: #B03D50;
+		font-style: italic;
+	  quotes: '"' '"' "'" "'";
+	}
+
+	blockquote::before,
+	blockquote::after {
+	  font-weight: bold;
+	}
+
+	blockquote::before {
+		content: open-quote;	
+		padding-right: 15px;
+	}
+
+	blockquote::after {
+	  content: close-quote;
+		padding-left: 15px;
+	}
+	&::after {
+		background: #B03D50;
+		content: '';
+		height: 1px;
+		position: absolute;
+		bottom: 0;	
+		left: 10%;
+		right: 10%;
+	}
+}
+
