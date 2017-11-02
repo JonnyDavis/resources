@@ -41,7 +41,7 @@ gulp.task('compile_js', function(){
 	gulp.watch("./scripts/*.js", function(){
 		gulp.src('./scripts/*.js')
 			.pipe(jsmin())
-			.pipe(concat('scripts.js'))
+			.pipe(concat('min.js'))
 			.pipe(gulp.dest('js'));
 	});
 });
