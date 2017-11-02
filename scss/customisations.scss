@@ -94,6 +94,29 @@ aside img {
 
 .carousel-inner {
 	max-height: 100%;
+	position: relative;
+	.carousel-text {
+		background-image: linear-gradient(black, transparent 95%);
+		padding: 5%;
+		position: absolute;
+		width: 100%;
+		h3 {
+			color: white;
+			font-family: $headerFont;
+			font-weight: bold;
+			text-align: right;
+		}
+		p {
+			color: white;
+			text-align: right;	
+		}
+		button {
+			background: linear-gradient(#B03D50, #6E2632 150%);
+			color: white;
+			float: right;
+			text-align: right;	
+		}
+	}
 }
 
 // Header

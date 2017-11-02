@@ -5935,7 +5935,26 @@ aside img {
   margin-bottom: -1px; }
 
 .carousel-inner {
-  max-height: 100%; }
+  max-height: 100%;
+  position: relative; }
+  .carousel-inner .carousel-text {
+    background-image: linear-gradient(black, transparent 95%);
+    padding: 5%;
+    position: absolute;
+    width: 100%; }
+    .carousel-inner .carousel-text h3 {
+      color: white;
+      font-family: "Alegreya";
+      font-weight: bold;
+      text-align: right; }
+    .carousel-inner .carousel-text p {
+      color: white;
+      text-align: right; }
+    .carousel-inner .carousel-text button {
+      background: linear-gradient(#B03D50, #6E2632 150%);
+      color: white;
+      float: right;
+      text-align: right; }
 
 .main-header {
   padding: 1% 5% 0;

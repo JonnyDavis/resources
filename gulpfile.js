@@ -44,8 +44,6 @@ gulp.task('rebuild-then-reload', ['styles'], function (done) {
 });
 
 
-
-
 gulp.task('compile_js', function(){
 		gulp.src('./scripts/*.js')
 			.pipe(jsmin())
