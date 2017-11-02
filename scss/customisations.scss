@@ -42,14 +42,47 @@ blockquote:after {
 }
 
 aside {
-	background: black;
-	color: white;
-	text-align: center;
-	padding-top: 2%;
+      background: #d9d9d9;
+      text-align: center;
+}
+
+aside h2 {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      font-family: $headerFont;
+      font-weight: bold;
+      text-decoration: underline;
+
+}
+
+.article-aside {
+      padding-bottom: 1%;
+      margin-bottom: 5%;
+      position: relative;
+}
+.article-aside::after {
+      background: #B03D50;
+      content: '';
+      height: 1px;
+      position: absolute;
+      bottom: 0;  
+      left: 10%;
+      right: 10%; 
+}
+
+
+aside a {
+      color: black;
+}
+
+aside img {
+      width: 95%;
+      border: 1px solid #B03D50;
 }
 
 .container-fluid { 
 	margin: 0;
+	padding: 0;
 }
 
 // Header
@@ -172,12 +205,4 @@ aside {
 		left: 10%;
 		right: 10%;
 	}
-}
-
-aside a {
-	color: white;
-}
-
-aside img {
-	width: 95%;
 }
