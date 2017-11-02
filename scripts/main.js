@@ -22,6 +22,8 @@ searchField.on('blur', function() {
 		width: 35
 	});
 
-
-
 });
+
+
+
+
