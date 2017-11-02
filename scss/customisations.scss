@@ -1,3 +1,6 @@
+// Variables
+
+$headerFont: 'Alegreya';
 
 blockquote {
 	color: gray;
@@ -21,16 +24,9 @@ blockquote:after {
 }
 
 
-.side-img-col img {
-	margin-top: 55px;
-}
-
-
 .art2-heading {
 	padding: 2% 0 2% 0;
-
 }
-
 
 .art2-vid {
 	padding-top: 2%;
@@ -58,8 +54,42 @@ aside {
 
 // Header
 
-header {
-	background-color: #B03D50;
+.main-header {
+	padding: 1% 5% 0;
+	border-bottom: 3px solid black;	
+
+	background: linear-gradient(#B03D50, #6E2632 150%);
+
+	h1 {
+		color: white;
+		font-family: $headerFont;
+		font-weight: bold;
+		letter-spacing: .1em;
+	}
+
+	.lead {
+		color: black;
+		font-family: $headerFont;
+		font-size: 14px;
+		letter-spacing: .2em;
+		text-transform: uppercase;
+	}
+
+	nav {
+		a {
+			display: inline-block;
+			
+			margin-right: 2%;
+
+			color: white;
+			font-family: $headerFont;
+			letter-spacing: .1em;
+		}
+		a.active {
+			text-decoration: underline;
+		}
+		padding-bottom: 1%;
+	}
 }
 
 // Articles
@@ -78,12 +108,13 @@ header {
 		letter-spacing: .1em;
 		text-decoration: underline;	
 	}
+
 	p {
 		color: #666666;
 		font-family: Helvetica;
 	}
 
-	p:nth-of-type(1):first-letter	 {
+	p:nth-of-type(1):first-letter {
 		color: #B03D50;	
 
 		font-family: $headerFont;
@@ -120,6 +151,8 @@ header {
 		left: 10%;
 		right: 10%;
 	}
+}
+
 aside a {
 	color: white;
 }

@@ -5865,14 +5865,69 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+blockquote {
+  color: gray;
+  font-style: italic;
+  quotes: '"' '"' "'" "'"; }
+
+blockquote::before,
+blockquote:after {
+  font-weight: bold; }
+
+blockquote::before {
+  content: open-quote;
+  padding-right: 15px; }
+
+blockquote:after {
+  content: close-quote;
+  padding-left: 15px; }
+
+.art2-heading {
+  padding: 2% 0 2% 0; }
+
+.art2-vid {
+  padding-top: 2%; }
+
+.sidebar {
+  background-color: black; }
+
+.news-item h1 {
+  margin-bottom: 20px; }
+
 aside {
-  background: black; }
+  background: black;
+  color: white;
+  text-align: center;
+  padding-top: 2%; }
 
 .container-fluid {
   margin: 0; }
 
-header {
-  background-color: #B03D50; }
+.main-header {
+  padding: 1% 5% 0;
+  border-bottom: 3px solid black;
+  background: linear-gradient(#B03D50, #6E2632 150%); }
+  .main-header h1 {
+    color: white;
+    font-family: "Alegreya";
+    font-weight: bold;
+    letter-spacing: .1em; }
+  .main-header .lead {
+    color: black;
+    font-family: "Alegreya";
+    font-size: 14px;
+    letter-spacing: .2em;
+    text-transform: uppercase; }
+  .main-header nav {
+    padding-bottom: 1%; }
+    .main-header nav a {
+      display: inline-block;
+      margin-right: 2%;
+      color: white;
+      font-family: "Alegreya";
+      letter-spacing: .1em; }
+    .main-header nav a.active {
+      text-decoration: underline; }
 
 .news-item {
   position: relative;
@@ -5914,44 +5969,6 @@ header {
     bottom: 0;
     left: 10%;
     right: 10%; }
-
-blockquote {
-  color: gray;
-  font-style: italic;
-  quotes: '"' '"' "'" "'"; }
-
-blockquote::before,
-blockquote:after {
-  font-weight: bold; }
-
-blockquote::before {
-  content: open-quote;
-  padding-right: 15px; }
-
-blockquote:after {
-  content: close-quote;
-  padding-left: 15px; }
-
-.side-img-col img {
-  margin-top: 55px; }
-
-.art2-heading {
-  padding: 2% 0 2% 0; }
-
-.art2-vid {
-  padding-top: 2%; }
-
-.sidebar {
-  background-color: black; }
-
-.news-item h1 {
-  margin-bottom: 20px; }
-
-aside {
-  background: black;
-  color: white;
-  text-align: center;
-  padding-top: 2%; }
 
 aside a {
   color: white; }
