@@ -5955,6 +5955,22 @@ aside img {
       letter-spacing: .1em; }
     .main-header nav a.active {
       text-decoration: underline; }
+  .main-header form {
+    padding-bottom: 1%;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    overflow: auto; }
+    .main-header form input[type="search"] {
+      border: none;
+      border-radius: 50%;
+      padding: .25em;
+      display: block;
+      width: 35px;
+      background-image: url("../images/mag.png");
+      background-size: 15px 15px;
+      background-repeat: no-repeat;
+      background-position: 10px; }
 
 .news-item {
   position: relative;
