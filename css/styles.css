@@ -5894,6 +5894,9 @@ blockquote:after {
 .news-item h1 {
   margin-bottom: 20px; }
 
+.scroll-sidebar {
+  overflow: auto; }
+
 aside {
   background: #d9d9d9;
   padding-top: 1%;
