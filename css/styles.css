@@ -15,16 +15,28 @@ blockquote:after {
   content: close-quote;
   padding-left: 15px; }
 
+.side-img-col img {
+  margin-top: 55px; }
+
 .art2-heading {
   padding: 2% 0 2% 0; }
+
+.art2-vid {
+  padding-top: 2%; }
+
+.sidebar {
+  background-color: black; }
 
 .news-item h1 {
   margin-bottom: 20px; }
 
-<<<<<<< HEAD
-.sidebar {
-  background-color: black; }
-=======
 aside {
-  background: black; }
->>>>>>> e38c9565659d0fc6b86aa7313637db0539327099
+  background: black;
+  color: white;
+  text-align: center; }
+
+aside a {
+  color: white; }
+
+aside img {
+  width: 95%; }
