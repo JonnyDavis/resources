@@ -5865,11 +5865,73 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+blockquote {
+  color: gray;
+  font-style: italic;
+  quotes: '"' '"' "'" "'"; }
+
+blockquote::before,
+blockquote:after {
+  font-weight: bold; }
+
+blockquote::before {
+  content: open-quote;
+  padding-right: 15px; }
+
+blockquote:after {
+  content: close-quote;
+  padding-left: 15px; }
+
+.side-img-col img {
+  margin-top: 55px; }
+
+.art2-heading {
+  padding: 2% 0 2% 0; }
+
+.art2-vid {
+  padding-top: 2%; }
+
+.sidebar {
+  background-color: black; }
+
+.news-item h1 {
+  margin-bottom: 20px; }
+
 aside {
-  background: black; }
+  background: #d9d9d9;
+  text-align: center; }
+
+aside h2 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: "Alegreya";
+  font-weight: bold;
+  text-decoration: underline; }
+
+.article-aside {
+  padding-bottom: 1%;
+  margin-bottom: 5%;
+  position: relative; }
+
+.article-aside::after {
+  background: #B03D50;
+  content: '';
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 10%; }
+
+aside a {
+  color: black; }
+
+aside img {
+  width: 95%;
+  border: 1px solid #B03D50; }
 
 .container-fluid {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 header {
   background-color: #B03D50; }
@@ -5914,47 +5976,3 @@ header {
     bottom: 0;
     left: 10%;
     right: 10%; }
-
-blockquote {
-  color: gray;
-  font-style: italic;
-  quotes: '"' '"' "'" "'"; }
-
-blockquote::before,
-blockquote:after {
-  font-weight: bold; }
-
-blockquote::before {
-  content: open-quote;
-  padding-right: 15px; }
-
-blockquote:after {
-  content: close-quote;
-  padding-left: 15px; }
-
-.side-img-col img {
-  margin-top: 55px; }
-
-.art2-heading {
-  padding: 2% 0 2% 0; }
-
-.art2-vid {
-  padding-top: 2%; }
-
-.sidebar {
-  background-color: black; }
-
-.news-item h1 {
-  margin-bottom: 20px; }
-
-aside {
-  background: black;
-  color: white;
-  text-align: center;
-  padding-top: 2%; }
-
-aside a {
-  color: white; }
-
-aside img {
-  width: 95%; }
