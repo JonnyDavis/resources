@@ -1,33 +1,69 @@
+// Variables
 
-blockquote {
-	color: gray;
-	font-style: italic;
-  quotes: '"' '"' "'" "'";
-}
+$headerFont: 'Alegreya';
 
-blockquote::before,
-blockquote:after {
-  font-weight: bold;
-}
+// Main elements
 
-blockquote::before {
-	content: open-quote;	
-	padding-right: 15px;
-}
-
-blockquote:after {
-  content: close-quote;
-	padding-left: 15px;
-}
-
-.side-img-col img {
-	margin-top: 55px;
-
-.art2-heading {
-	padding: 2% 0 2% 0;
+aside {
+	background: black;
 
 }
 
-.art2-vid {
-	padding-top: 2%;
+.news-item {
+	position: relative;
+
+	margin: 1% 0;
+	padding: 5% 3%;
+	h1 {
+		margin-bottom: 20px;
+	}
+	h1, h2 {
+		font-family: $headerFont;
+		font-weight: bold;
+		letter-spacing: .1em;
+		text-decoration: underline;	
+	}
+	p {
+		color: #666666;
+		font-family: Helvetica;
+	}
+
+	p:nth-of-type(1):first-letter	 {
+		color: #B03D50;	
+
+		font-family: $headerFont;
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	blockquote {
+		color: #B03D50;
+		font-style: italic;
+	  quotes: '"' '"' "'" "'";
+	}
+
+	blockquote::before,
+	blockquote::after {
+	  font-weight: bold;
+	}
+
+	blockquote::before {
+		content: open-quote;	
+		padding-right: 15px;
+	}
+
+	blockquote::after {
+	  content: close-quote;
+		padding-left: 15px;
+	}
+	&::after {
+		background: #B03D50;
+		content: '';
+		height: 1px;
+		position: absolute;
+		bottom: 0;	
+		left: 10%;
+		right: 10%;
+	}
 }
+
