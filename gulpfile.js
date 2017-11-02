@@ -6,6 +6,7 @@ let watch = require('gulp-watch');
 let gulpSequence = require('gulp-sequence');
 let concat = require('gulp-concat');
 let jsmin = require('gulp-jsmin');
+let tabify = require('gulp-tabify');
 
 gulp.task('sass', function () {
     var stream = gulp.src('./scss/styles.scss')
@@ -27,27 +28,19 @@ gulp.task('styles', function(callback){
 	gulpSequence('sass', 'minify-css')(callback)
 });
 
+gulp.task('compile_js', function(){
+		gulp.src('./scripts/*.js')
+			.pipe(jsmin())
+			.pipe(rename({suffix: '.min'}))
+			.pipe(gulp.dest('js'));
+});
 
 gulp.task('watch', function () {
 	gulp.watch('./scss/*.scss', ['styles']);
+	gulp.watch('./scripts/*.js', ['compile_js']);
 });
 
 
-// Compile and minify js
-
-gulp.task('default', ['compile_js']);
-
-gulp.task('compile_js', function(){
-	gulp.watch("./scripts/*.js", function(){
-		gulp.src('./scripts/*.js')
-			.pipe(jsmin())
-			.pipe(concat('min.js'))
-			.pipe(gulp.dest('js'));
-	});
-});
-
-let tabify = require('gulp-tabify');
- 
 gulp.task('default', function () {
   return gulp.src('./app/**.*.js')
     .pipe(tabify(4, true))
