@@ -11,7 +11,6 @@
 		<link href="css/carousel.css" rel="stylesheet">
    		<link href="https://fonts.googleapis.com/css?family=Alegreya:400,700" rel="stylesheet">
   </head>
-	</head>
 	
 	<body>
 
@@ -55,14 +54,27 @@
 				<!-- end of carousel -->	
 
 
-    <header class="container-fluid">
+
+  <body>
+    <header class="container-fluid main-header">
+
       <div class="row">
-        <div class="col-md-4">
-          <h1>Weird News</h1>
+        <div class="col-md-6">
+          <h1>Brizzle Weird News</h1>
+          <p class="lead">Bizarre stories from the city of Bristol!</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
+          <form>
+            <input id="search" type="search" name="search" />
+            <input type="submit" />
+          </form>
+        </div>
+        <div class="col-md-12">
           <nav>
-            
+            <a class="active" href="#">Home</a>
+            <a href="#">Latest</a>
+            <a href="#">Top stories</a>
+            <a href="#">Weird Sh*t</a>
           </nav>
         </div>
       </div>
