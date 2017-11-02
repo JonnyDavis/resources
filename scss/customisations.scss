@@ -1,7 +1,6 @@
 // Variables
 
 $headerFont: 'Alegreya';
->>>>>>> 8f461be7ad713fabd8116b5a7783276b71cd2aea
 
 blockquote {
 	color: gray;
@@ -42,12 +41,9 @@ blockquote:after {
 	margin-bottom: 20px;
 }
 
-.carouselcontainer {
-height:550px;
-}
-
 aside {
       background: #d9d9d9;
+      padding-top: 1%;
       text-align: center;
 }
 
@@ -88,6 +84,16 @@ aside img {
 .container-fluid { 
 	margin: 0;
 	padding: 0;
+}
+
+// Carousel
+
+.carousel {
+	margin-bottom: -1px;		
+}
+
+.carousel-inner {
+	max-height: 100%;
 }
 
 // Header
@@ -209,5 +215,8 @@ aside img {
 		bottom: 0;	
 		left: 10%;
 		right: 10%;
+	}
+	&:nth-of-type(1) {
+		padding-top: 2%;
 	}
 }

@@ -5896,6 +5896,7 @@ blockquote:after {
 
 aside {
   background: #d9d9d9;
+  padding-top: 1%;
   text-align: center; }
 
 aside h2 {
@@ -5929,6 +5930,12 @@ aside img {
 .container-fluid {
   margin: 0;
   padding: 0; }
+
+.carousel {
+  margin-bottom: -1px; }
+
+.carousel-inner {
+  max-height: 100%; }
 
 .main-header {
   padding: 1% 5% 0;
@@ -6012,3 +6019,5 @@ aside img {
     bottom: 0;
     left: 10%;
     right: 10%; }
+  .news-item:nth-of-type(1) {
+    padding-top: 2%; }
