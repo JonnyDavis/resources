@@ -5895,13 +5895,40 @@ blockquote:after {
   margin-bottom: 20px; }
 
 aside {
-  background: black;
-  color: white;
-  text-align: center;
-  padding-top: 2%; }
+  background: #d9d9d9;
+  text-align: center; }
+
+aside h2 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: "Alegreya";
+  font-weight: bold;
+  text-decoration: underline; }
+
+.article-aside {
+  padding-bottom: 1%;
+  margin-bottom: 5%;
+  position: relative; }
+
+.article-aside::after {
+  background: #B03D50;
+  content: '';
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 10%; }
+
+aside a {
+  color: black; }
+
+aside img {
+  width: 95%;
+  border: 1px solid #B03D50; }
 
 .container-fluid {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 .main-header {
   padding: 1% 5% 0;
@@ -5928,6 +5955,22 @@ aside {
       letter-spacing: .1em; }
     .main-header nav a.active {
       text-decoration: underline; }
+  .main-header form {
+    padding-bottom: 1%;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    overflow: auto; }
+    .main-header form input[type="search"] {
+      border: none;
+      border-radius: 50%;
+      padding: .25em;
+      display: block;
+      width: 35px;
+      background-image: url("../images/mag.png");
+      background-size: 15px 15px;
+      background-repeat: no-repeat;
+      background-position: 10px; }
 
 .news-item {
   position: relative;
@@ -5969,9 +6012,3 @@ aside {
     bottom: 0;
     left: 10%;
     right: 10%; }
-
-aside a {
-  color: white; }
-
-aside img {
-  width: 95%; }
