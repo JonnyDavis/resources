@@ -21,15 +21,14 @@
     "bootstrap": "^4.0.0-beta.2",
     "gulp-clean-css": "^3.9.0",
     "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.4.0",
     "gulp-jsmin": "^0.1.5",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sequence": "^0.4.6",
-    "gulp-watch": "^4.3.11"
-  },
-  "devDependencies": {
+    "gulp-watch": "^4.3.11",
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-tabify": "0.0.2"
-  }
+  },
 }

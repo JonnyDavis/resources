@@ -8,6 +8,7 @@ let concat = require('gulp-concat');
 let jsmin = require('gulp-jsmin');
 let tabify = require('gulp-tabify');
 let browserSync = require('browser-sync').create();
+const imagemin = require('gulp-imagemin');
 
 // Static server
 gulp.task('browser-sync', function() {
@@ -59,6 +60,13 @@ gulp.task('default', function () {
 });
 
 
+ 
+gulp.task('img-min', () =>
+    gulp.src('src/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/images'))
+);
+
 
 gulp.task('watch', function () {
 	browserSync.init({
@@ -70,4 +78,5 @@ gulp.task('watch', function () {
 	gulp.watch('./scss/*.scss', ['styles']);
 	gulp.watch('./scripts/*.js', ['compile_js']);
 	gulp.watch(['./scss/*.scss', './*.html', './*.js'], ['rebuild-then-reload']);
+	gulp.watch('src/images/*',['img-min']);
 });
