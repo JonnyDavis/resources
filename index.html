@@ -29,7 +29,7 @@
             <a class="active" href="#">Home</a>
             <a href="#">Latest</a>
             <a href="#">Top stories</a>
-            <a href="#">Weird Sh*t</a>
+            <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">Weird Sh*t</a>
           </nav>
         </div>
       </div>
@@ -223,6 +223,40 @@
       </aside>
 
   	</main>
+
+		<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg">
+		    <div class="modal-content">
+		    	<h2>Sign up for some weird sh*t</h2>
+					<form>
+					  <div class="form-group">
+					    <label for="exampleInputEmail1">Email address</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					  </div>
+						<label>How weird?</label>
+					  <div class="form-check form-check-inline">
+						  <label class="form-check-label">
+						    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Mild
+						  </label>
+						</div>
+						<div class="form-check form-check-inline">
+						  <label class="form-check-label">
+						    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Weird
+						  </label>
+						</div>
+						<div class="form-check form-check-inline">
+						  <label class="form-check-label">
+						    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> WTF
+						  </label>
+						</div> 
+						<div>
+					  	<input type="submit" class="btn float-right" value="Submit"></input>
+					  </div>
+					</form>
+		    </div>
+		  </div>
+		</div>
 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->

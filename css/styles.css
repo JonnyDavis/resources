@@ -5865,6 +5865,14 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+h1, h2, h3 {
+  font-family: "Alegreya";
+  font-weight: bold;
+  letter-spacing: 0.1em; }
+
+h2, h3 {
+  text-decoration: underline; }
+
 blockquote {
   color: gray;
   font-style: italic;
@@ -5904,10 +5912,7 @@ aside {
 
 aside h2 {
   padding-top: 5%;
-  padding-bottom: 5%;
-  font-family: "Alegreya";
-  font-weight: bold;
-  text-decoration: underline; }
+  padding-bottom: 5%; }
 
 .article-aside {
   padding-bottom: 1%;
@@ -5947,8 +5952,6 @@ aside img {
     width: 100%; }
     .carousel-inner .carousel-text h3 {
       color: white;
-      font-family: "Alegreya";
-      font-weight: bold;
       text-align: right; }
     .carousel-inner .carousel-text p {
       color: white;
@@ -5964,10 +5967,7 @@ aside img {
   border-bottom: 3px solid black;
   background: linear-gradient(#B03D50, #6E2632 150%); }
   .main-header h1 {
-    color: white;
-    font-family: "Alegreya";
-    font-weight: bold;
-    letter-spacing: .1em; }
+    color: white; }
   .main-header .lead {
     color: black;
     font-family: "Alegreya";
@@ -6007,11 +6007,6 @@ aside img {
   padding: 5% 3%; }
   .news-item h2 {
     margin-bottom: 20px; }
-  .news-item h2, .news-item h3 {
-    font-family: "Alegreya";
-    font-weight: bold;
-    letter-spacing: .1em;
-    text-decoration: underline; }
   .news-item p {
     color: #666666;
     font-family: Helvetica; }
@@ -6032,7 +6027,7 @@ aside img {
     padding-right: 15px; }
   .news-item blockquote::after {
     content: close-quote;
-    padding-left: 15px; }
+    padding-left: 15px3; }
   .news-item::after {
     background: #B03D50;
     content: '';
@@ -6043,3 +6038,11 @@ aside img {
     right: 10%; }
   .news-item:nth-of-type(1) {
     padding-top: 2%; }
+
+.modal-content {
+  background: linear-gradient(#B03D50, #6E2632 150%);
+  padding: 3%;
+  color: white; }
+  .modal-content .btn {
+    background-color: black;
+    color: white; }

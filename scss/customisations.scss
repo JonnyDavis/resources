@@ -1,6 +1,19 @@
-// Variables
+	// Variables
 
 $headerFont: 'Alegreya';
+
+// Generic Styling
+
+
+h1, h2, h3 {
+	font-family: $headerFont;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+
+h2, h3 {
+	text-decoration: underline;
+}
 
 blockquote {
 	color: gray;
@@ -54,10 +67,6 @@ aside {
 aside h2 {
       padding-top: 5%;
       padding-bottom: 5%;
-      font-family: $headerFont;
-      font-weight: bold;
-      text-decoration: underline;
-
 }
 
 .article-aside {
@@ -106,8 +115,6 @@ aside img {
 		width: 100%;
 		h3 {
 			color: white;
-			font-family: $headerFont;
-			font-weight: bold;
 			text-align: right;
 		}
 		p {
@@ -133,9 +140,6 @@ aside img {
 
 	h1 {
 		color: white;
-		font-family: $headerFont;
-		font-weight: bold;
-		letter-spacing: .1em;
 	}
 
 	.lead {
@@ -194,12 +198,6 @@ aside img {
 	h2 {
 		margin-bottom: 20px;
 	}
-	h2, h3 {
-		font-family: $headerFont;
-		font-weight: bold;
-		letter-spacing: .1em;
-		text-decoration: underline;	
-	}
 
 	p {
 		color: #666666;
@@ -232,7 +230,7 @@ aside img {
 
 	blockquote::after {
 	  content: close-quote;
-		padding-left: 15px;
+		padding-left: 15px3
 	}
 	&::after {
 		background: #B03D50;
@@ -245,5 +243,18 @@ aside img {
 	}
 	&:nth-of-type(1) {
 		padding-top: 2%;
+	}
+}
+
+// Modal 
+
+.modal-content {
+	background: linear-gradient(#B03D50, #6E2632 150%); 
+	padding: 3%;
+
+	color: white;
+	.btn {
+		background-color: black;
+		color: white;
 	}
 }
