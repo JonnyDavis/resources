@@ -8,6 +8,7 @@ let concat = require('gulp-concat');
 let jsmin = require('gulp-jsmin');
 let tabify = require('gulp-tabify');
 let browserSync = require('browser-sync').create();
+const imagemin = require('gulp-imagemin');
 
 // Static server
 gulp.task('browser-sync', function() {
@@ -52,12 +53,19 @@ gulp.task('compile_js', function(){
 });
 
 
-gulp.task('default', function () {
-  return gulp.src('./app/**.*.js')
+gulp.task('tabify', function () {
+  return gulp.src('./scripts/*.js')
     .pipe(tabify(4, true))
-    .pipe(gulp.dest('./app'));
+    .pipe(gulp.dest('./js/'));
 });
 
+
+ 
+gulp.task('img-min', () =>
+    gulp.src('./images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/images'))
+);
 
 
 gulp.task('watch', function () {
@@ -70,4 +78,5 @@ gulp.task('watch', function () {
 	gulp.watch('./scss/*.scss', ['styles']);
 	gulp.watch('./scripts/*.js', ['compile_js']);
 	gulp.watch(['./scss/*.scss', './*.html', './*.js'], ['rebuild-then-reload']);
+	gulp.watch('./images/*',['img-min']);
 });
